@@ -190,6 +190,13 @@
   margin: 0 0 8px 0;
   color: var(--paper);
 }
+.pub-link {
+  color: inherit; text-decoration: none;
+  background-image: linear-gradient(transparent calc(100% - 1px), var(--accent) calc(100% - 1px));
+  background-size: 0% 100%; background-repeat: no-repeat;
+  transition: background-size 0.25s ease, color 0.25s ease;
+}
+.pub-link:hover { background-size: 100% 100%; color: var(--accent); }
 .pub-meta {
   display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
   font-family: var(--mono); font-size: 11.5px;
@@ -368,6 +375,15 @@
 .repo:hover .repo-foot { color: var(--ink); border-top-color: rgba(12,23,34,0.2); }
 .repo:hover .repo-status { color: var(--ink); }
 .repo:hover .repo-desc { color: var(--ink); }
+
+.repo.coming-soon { cursor: default; opacity: 0.86; }
+.repo.coming-soon:hover { background: transparent; color: var(--paper); }
+.repo.coming-soon:hover .repo-tag { color: var(--accent); }
+.repo.coming-soon:hover .repo-stack span { border-color: var(--rule); color: var(--ink-mute); }
+.repo.coming-soon:hover .repo-foot { color: var(--ink-mute); border-top-color: var(--rule); }
+.repo.coming-soon:hover .repo-desc { color: var(--ink-mute); }
+.repo.coming-soon .repo-tag { color: var(--ink-mute); letter-spacing: 0.14em; }
+.repo.coming-soon .repo-arrow { opacity: 0; }
 
 .repo.flagship {
   background: var(--paper-2);
