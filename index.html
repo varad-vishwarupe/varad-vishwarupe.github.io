@@ -61,7 +61,7 @@
         <div class="rail-list">
           <span>Inaugural CS Scholar, Institute for Ethics in AI</span>
           <span>5+ years in the AI industry</span>
-          <span>9 Granted Patents</span>
+          <span>11 Granted Patents</span>
           <span>h-index: 12 · Citations: 700+</span>
           <span>Available for collaboration</span>
         </div>
@@ -100,8 +100,8 @@
         sitting inside <span class="serif-it">Human-Computer Interaction</span>, both
         feeding into a more honest <span class="serif-it">Human-AI Interaction</span>:
         systems we can scope, calibrate, and repair with, rather than simply consume
-        from. Each layer constrains the next. <em>The instruments come first; the
-        philosophy follows.</em>
+        from. Each layer constrains the next. <em>What we measure is what we
+        end up maintaining.</em>
       </p>
 
       <div class="hero-actions">
@@ -131,17 +131,10 @@
 
       <div class="affiliations">
         <div class="aff">
-          <span class="label">Currently</span>
-          <b>Researching Human-Centered AI</b>
-          <small>Department of Computer Science &amp; Oxford Institute for Ethics in AI; Inaugural CS Scholar - first CS PhD researcher in the Institute's history.</small>
-        </div>
-        <div class="aff-prev">
-          <span class="label">Formerly</span>
-          <ul>
-            <li><b>Google DeepMind</b> · Alignment Team · <i>Intern (Summer 2025)</i></li>
-            <li><b>Amazon · Alexa AI</b> · Research Scientist II</li>
-            <li><b>Microsoft · Azure ML</b> · SDE I</li>
-          </ul>
+          <span class="label">Address</span>
+          <small>Room 503, Department of Computer Science<br>
+          Wolfson Building, Parks Road<br>
+          University of Oxford, OX2 6NN, UK</small>
         </div>
       </div>
     </aside>
@@ -167,16 +160,17 @@
       </div>
       <div>
         <h2 class="section-title">The bench-verified property and the deployed behaviour are <em>different things.</em></h2>
-        <p class="section-kicker">A model that scores well on a static benchmark is not the same as
-        a system that behaves trustworthily once a person, a workflow, and a deployment context
-        wrap around it. My work treats alignment as ongoing <span class="serif-it">maintenance</span>
-        rather than a one-time <span class="serif-it">manufacturing step</span>, and builds the
-        rubrics, instruments, and interfaces that maintenance requires. The HCI thread runs
-        through this directly: the CHI 2026 study of designers and developers adopting LLMs as tools
-        or teammates, the ECSCW 2026 work on the collaboration gap and grounding-and-repair conditions,
-        and the HCII 2026 study of expectation management in smart-home AI all feed into the same
-        question, what makes Human-AI Interaction stable when the AI changes underneath you. The active
-        threads: <span class="serif-it">deployment-time alignment</span>,
+        <p class="section-kicker">A model that scores well on a static benchmark is not the same as a system
+        that behaves trustworthily once a person, a workflow, and a deployment context wrap around it. My
+        work treats alignment as <span class="serif-it">ongoing maintenance</span>, not a one-time
+        <span class="serif-it">manufacturing step</span>, and builds the rubrics, instruments, and
+        interfaces that maintenance requires.</p>
+        <p class="section-kicker">Three studies anchor the HCI side of this: <b>CHI 2026</b> on how
+        designers and developers adopt LLMs as tools or teammates,
+        <b>ECSCW 2026</b> on the collaboration gap and the grounding-and-repair conditions that hold
+        Human-AI work together, and <b>HCII 2026</b> on expectation management in smart-home AI. They
+        triangulate one question, what makes Human-AI Interaction stable when the AI changes underneath you.
+        The active threads on the alignment side: <span class="serif-it">deployment-time alignment</span>,
         <span class="serif-it">interactional benchmarks</span>, and the
         <span class="serif-it">structural limits of dual-use ethics</span>.</p>
       </div>
@@ -678,19 +672,21 @@
         </div>
       </a>
 
-      <a class="repo coming-soon" href="javascript:void(0)" aria-disabled="true">
+      <a class="repo" href="https://github.com/varad-vishwarupe/semantic-jailbreak-taxonomy" target="_blank" rel="noopener">
         <div class="repo-head">
-          <span class="repo-tag">TAXONOMY</span>
-          <span class="repo-status">coming soon</span>
+          <span class="repo-tag">TAXONOMY · LIVE</span>
+          <span class="repo-status">v1.0 · 5+6+6</span>
         </div>
         <h3>semantic-jailbreak-taxonomy</h3>
-        <p class="repo-desc">Structured taxonomy of paraphrase-driven RLHF failures with
-        reproducible failure traces. Model-agnostic regression harness.</p>
+        <p class="repo-desc">Structural taxonomy of LLM jailbreak strategies, failure signatures,
+        and mitigations from Vishwarupe-Kuklani-Shinde (IJCA 2025). Five attack classes, six failure
+        signatures, six mitigation strategies. Classification template + Python validation tooling.
+        Defensive-use scope; no harmful prompts in repo.</p>
         <div class="repo-stack">
-          <span>Python</span><span>Hugging Face</span><span>inspect_ai</span>
+          <span>Python</span><span>YAML</span>
         </div>
         <div class="repo-foot">
-          <span class="mono">…/semantic-jailbreak-taxonomy</span>
+          <span class="mono">github.com/varad-vishwarupe/semantic-jailbreak-taxonomy</span>
           <span class="repo-arrow">→</span>
         </div>
       </a>
@@ -713,19 +709,20 @@
         </div>
       </a>
 
-      <a class="repo coming-soon" href="javascript:void(0)" aria-disabled="true">
+      <a class="repo" href="https://github.com/varad-vishwarupe/grice-maxim-prober" target="_blank" rel="noopener">
         <div class="repo-head">
-          <span class="repo-tag">AUDIT</span>
-          <span class="repo-status">coming soon</span>
+          <span class="repo-tag">PROBER · LIVE</span>
+          <span class="repo-status">v1.0 · 24 probes</span>
         </div>
-        <h3>pluralism-audit</h3>
-        <p class="repo-desc">Auditing RLHF-tuned LLMs for value homogenisation in high-stakes
-        labour decisions. Synthetic-scenario generator included.</p>
+        <h3>grice-maxim-prober</h3>
+        <p class="repo-desc">Probes LLMs against Grice's four conversational maxims (Quantity,
+        Quality, Relation, Manner). Anchored 0/1/2 rubric, 24 probe prompts targeting specific failure
+        modes, scoring template, Python analysis tool. Substrate-level instrument feeding into VIF.</p>
         <div class="repo-stack">
-          <span>Python</span><span>HuggingFace</span><span>scipy</span><span>matplotlib</span>
+          <span>Python</span><span>YAML</span><span>CSV</span>
         </div>
         <div class="repo-foot">
-          <span class="mono">…/pluralism-audit</span>
+          <span class="mono">github.com/varad-vishwarupe/grice-maxim-prober</span>
           <span class="repo-arrow">→</span>
         </div>
       </a>
@@ -785,37 +782,25 @@
         </div>
       </a>
 
-    </div>
+      <a class="repo" href="https://github.com/varad-vishwarupe/humanistic-ethics-audit" target="_blank" rel="noopener">
+        <div class="repo-head">
+          <span class="repo-tag">AUDIT · LIVE</span>
+          <span class="repo-status">35 prompts · 4 markers</span>
+        </div>
+        <h3>humanistic-ethics-audit</h3>
+        <p class="repo-desc">Reproducibility scaffolding for the AIES 2026 audit of advisory LLMs in
+        contested labour contexts. Full prompt corpus, four-marker rubric (Plurality, Incommensurability,
+        Procedural Grounding, Participation), reported descriptive tables, validation tooling.
+        T1-public material; raw response corpus and individual-coder scores held T2-controlled.</p>
+        <div class="repo-stack">
+          <span>Python</span><span>YAML</span><span>CSV</span>
+        </div>
+        <div class="repo-foot">
+          <span class="mono">github.com/varad-vishwarupe/humanistic-ethics-audit</span>
+          <span class="repo-arrow">→</span>
+        </div>
+      </a>
 
-    <!-- Smaller tools rail -->
-    <div class="tools-rail">
-      <div class="tools-head"><span class="caps">Smaller tools &amp; explorations</span></div>
-      <ul class="tools-list">
-        <li>
-          <code>alignment-eval-cookbook</code>
-          <span>Running collection of evaluation patterns - paraphrase robustness, role-injection probes, refusal-stability checks.</span>
-        </li>
-        <li>
-          <code>charlie-vif-bridge</code>
-          <span>Connector between the Solid Charlie agent and the VIF Monitor.</span>
-        </li>
-        <li>
-          <code>grice-maxim-prober</code>
-          <span>Probes LLMs for adherence to Grice's conversational maxims (quantity, quality, relation, manner).</span>
-        </li>
-        <li>
-          <code>patent-portfolio</code>
-          <span>Descriptions and figures for nine granted patents (where licensing permits).</span>
-        </li>
-        <li>
-          <code>tool-or-teammate</code>
-          <span>Analysis pipeline for the CHI 2026 paper - coded interview excerpts, grounded-theory codebook.</span>
-        </li>
-        <li>
-          <code>collaboration-gap</code>
-          <span>Analysis pipeline for the ECSCW 2026 paper on grounding-and-repair conditions.</span>
-        </li>
-      </ul>
     </div>
 
   </div>
@@ -1214,15 +1199,17 @@
 
         <div class="cv-col-head" style="margin-top: 32px;"><span class="caps">Granted Patents</span></div>
         <ol class="patents">
-          <li><b>ZA202308625B</b> · A system and method to perform public health prognosis using human-inspired AI and ML interpretability <em>(Granted)</em></li>
-          <li><b>ZA202208835B</b> · A system and method to develop human-computer interaction-based user assistance <em>(Granted)</em></li>
-          <li><b>ZA202208837B</b> · A system and method to generate intelligent payment alerts using AI <em>(Granted)</em></li>
-          <li><b>ZA202208302B</b> · A system and method to detect Twitter spam using an intelligent hybrid classifier <em>(Granted)</em></li>
-          <li><b>ZA202308627B</b> · A system and method to analyze online news articles via an intelligent interactive interface <em>(Granted)</em></li>
-          <li><b>ZA202208313B</b> · A system and method to generate and display personalized television content <em>(Granted)</em></li>
-          <li><b>ZA202308622B</b> · A system and method to perform real-time face recognition <em>(Granted)</em></li>
-          <li><b>ZA202308623B</b> · A system and method to operate automated toll collection <em>(Granted)</em></li>
-          <li><b>AU2021106275A4</b> · A system and method for zone-specific weather monitoring <em>(Granted)</em></li>
+          <li><b>AU2021106275A4</b> · A system and method for zone-specific weather monitoring</li>
+          <li><b>ZA202308625B</b> · A system and method to perform public health prognosis using human-inspired AI and ML interpretability</li>
+          <li><b>ZA202208835B</b> · A system and method to develop human-computer interaction-based user assistance</li>
+          <li><b>ZA202208837B</b> · A system and method to generate intelligent payment alerts using AI</li>
+          <li><b>ZA202208302B</b> · A system and method to detect Twitter spam using an intelligent hybrid classifier</li>
+          <li><b>ZA202308627B</b> · A system and method to analyze online news articles via an intelligent interactive interface</li>
+          <li><b>ZA202208313B</b> · A system and method to generate and display personalized television content</li>
+          <li><b>ZA202308622B</b> · A system and method to perform real-time face recognition</li>
+          <li><b>ZA202308623B</b> · A system and method to operate automated toll collection</li>
+          <li><b>IN ·</b> Recently granted, details forthcoming</li>
+          <li><b>IN ·</b> Recently granted, details forthcoming</li>
         </ol>
       </div>
 
@@ -1283,7 +1270,7 @@
           </a>
           <a href="https://scholar.google.com/citations?hl=en&amp;user=w4xg8kQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" class="ch">
             <span class="caps">Google Scholar</span>
-            <b>h-index 12 · 700+ citations</b>
+            <b>tinyurl.com/mr4yvbkd</b>
           </a>
           <a href="https://github.com/varad-vishwarupe" target="_blank" class="ch">
             <span class="caps">GitHub</span>
@@ -1305,17 +1292,6 @@
     <div class="footer-rule"></div>
 
     <footer class="site-footer">
-      <div class="ft-col ft-brand">
-        <span class="brand-mark">VV</span>
-        <div>
-          <b>Varad Vishwarupe</b>
-          <small>DPhil (PhD) Scholar · Department of Computer Science &amp; Oxford Institute for Ethics in AI</small>
-        </div>
-      </div>
-      <div class="ft-col">
-        <span class="caps">Currently</span>
-        <small>Researching Human-Centered AI at the Department of Computer Science and the Oxford Institute for Ethics in AI. Inaugural CS Scholar - first CS PhD researcher in the Institute's history.</small>
-      </div>
       <div class="ft-col ft-meta">
         <small>© 2024–2026 Varad Vishwarupe. Code: MIT. Words: CC BY 4.0.</small>
         <small>Set in Newsreader, Instrument Serif, Geist &amp; Geist Mono.</small>
