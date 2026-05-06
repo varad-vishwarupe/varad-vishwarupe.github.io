@@ -1,5 +1,5 @@
 /* ============================================================
-   Varad Vishwarupe — Personal Site
+   Varad Vishwarupe, Personal Site
    Editorial / academic / researcher
    ============================================================ */
 
@@ -234,7 +234,7 @@ a { color: inherit; text-decoration: none; }
   text-transform: uppercase;
 }
 .section-num::before {
-  content: '— ';
+  content: ',  ';
 }
 .section-title {
   font-family: var(--serif);
