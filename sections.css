@@ -836,10 +836,10 @@
 .contact-main .section-num { margin-bottom: 16px; }
 .contact-title {
   font-family: var(--serif); font-weight: 400;
-  font-size: clamp(36px, 4.4vw, 60px);
-  line-height: 1.02; letter-spacing: -0.025em;
-  margin: 0 0 36px 0;
-  max-width: 18ch;
+  font-size: clamp(22px, 2.6vw, 32px);
+  line-height: 1.15; letter-spacing: -0.015em;
+  margin: 0 0 28px 0;
+  max-width: 28ch;
 }
 .contact-title em { font-family: var(--serif-italic); font-style: italic; color: var(--accent); }
 
@@ -878,7 +878,7 @@
 
 .footer-rule { height: 1px; background: var(--rule-strong); margin: 0 -32px; }
 .site-footer {
-  display: grid; grid-template-columns: 1fr 1.4fr 1fr;
+  display: grid; grid-template-columns: 1.6fr 1fr;
   gap: 32px;
   padding: 28px 0 36px 0;
   align-items: center;
@@ -890,8 +890,7 @@
   line-height: 1.4;
 }
 .ft-left { text-align: left; align-items: flex-start; }
-.ft-center { text-align: center; align-items: center; }
-.ft-right { text-align: right; align-items: flex-end; }
+.ft-center { text-align: center; align-items: center; padding-left: 24px; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1000px) {
