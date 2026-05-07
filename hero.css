@@ -243,32 +243,24 @@
 .hero-portrait {
   display: flex; flex-direction: column; gap: 32px;
 }
-.hero-portrait figure { margin: 0; }
+.hero-portrait figure { margin: 0; display: flex; justify-content: center; }
 .portrait-frame {
   position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
   background: var(--paper-3);
-  padding: 14px 14px 56px 14px;
-  box-shadow: 0 30px 80px -30px rgba(0,0,0,0.6);
-  border: 1px solid var(--rule-strong);
+  box-shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+  border: 2px solid var(--rule-strong);
+  padding: 0;
 }
 .portrait-frame img {
   width: 100%;
+  height: 100%;
   display: block;
+  object-fit: cover;
   filter: contrast(1.05) brightness(1.02);
-}
-.portrait-tag {
-  position: absolute;
-  bottom: 18px; left: 14px;
-  font-family: var(--mono);
-  font-size: 10px;
-  color: var(--paper);
-  letter-spacing: 0.18em;
-}
-.portrait-frame::after {
-  content: '';
-  position: absolute;
-  bottom: 24px; right: 14px;
-  width: 28px; height: 1px; background: var(--paper);
 }
 .hero-portrait figcaption {
   display: flex; flex-direction: column; gap: 4px;
@@ -312,19 +304,21 @@
 }
 .aff-prev ul {
   list-style: none; margin: 0; padding: 0;
-  display: flex; flex-direction: column; gap: 8px;
+  display: flex; flex-direction: column; gap: 12px;
   font-family: var(--serif);
   font-size: 16px;
   line-height: 1.4;
   color: var(--paper);
 }
 .aff-prev ul li { color: var(--paper); font-weight: 400; font-style: normal; }
-.aff-prev ul li b { font-weight: 500; color: var(--paper); }
-.aff-prev ul li i {
+.aff-prev ul li b { font-weight: 500; color: var(--paper); font-size: 16px; }
+.aff-prev ul li .designation {
   font-family: var(--serif);
+  font-size: 13px;
   font-style: normal;
-  color: var(--paper);
-  font-size: 16px;
+  color: var(--ink-mute);
+  display: inline-block;
+  margin-top: 1px;
 }
 
 /* ---- HERO QUOTE STRIP ---- */
