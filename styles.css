@@ -58,6 +58,9 @@ a { color: inherit; text-decoration: none; }
 /* ---------- TYPE ---------- */
 .serif { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; }
 .serif-it { font-family: var(--serif-italic); font-style: italic; font-weight: 400; }
+
+/* Highlight class - orange accent for emphasis without italics */
+.hi { color: var(--accent); font-weight: 500; }
 .mono { font-family: var(--mono); font-weight: 400; }
 .label {
   font-family: var(--mono);

@@ -371,7 +371,14 @@
 }
 @media (max-width: 760px) {
   .hero-frame { grid-template-columns: 1fr; }
-  .hero-portrait { order: -1; max-width: 240px; }
+  .hero-portrait {
+    order: -1;
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hero-portrait figure { justify-content: center; }
+  .affiliations { align-items: center; text-align: center; }
   .sup-grid { grid-template-columns: 1fr; gap: 12px; }
   .hero-quote { padding: 32px 20px; margin-top: 48px; }
 }
