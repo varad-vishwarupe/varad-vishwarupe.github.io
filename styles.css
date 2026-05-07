@@ -290,17 +290,21 @@ a { color: inherit; text-decoration: none; }
 .rail-pyramid-up .ri-7 { font-size: 16.5px; opacity: 0.98; }
 .rail-pyramid-up .ri-8 { font-size: 17px; opacity: 1; font-style: italic; font-family: var(--serif-italic); color: var(--accent); }
 
-/* Sidebar Address: centered + slight right shift */
+/* Sidebar Address: justified body text, left-aligned label */
 .aff-address {
-  text-align: center;
-  padding-left: 16px;
+  padding-left: 0;
 }
 .aff-address .label {
   text-align: left;
 }
 .aff-address small {
   display: block;
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--paper);
 }
 
 /* Bump section-internal caps headers (Three Threads, Selected Publications, Featured) */
@@ -310,6 +314,14 @@ a { color: inherit; text-decoration: none; }
   font-size: 12.5px;
   letter-spacing: 0.18em;
   font-weight: 500;
+}
+
+/* Justify thread body paragraphs (sections I, II, III) */
+.thread-justified p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 /* ---------- BUTTONS / CHIPS ---------- */

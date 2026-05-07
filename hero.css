@@ -28,10 +28,16 @@
 .rail-block { border-top: 1px solid var(--rule-strong); padding-top: 12px; }
 .rail-block .label { margin-bottom: 10px; }
 .rail-list {
-  display: flex; flex-direction: column; gap: 4px;
+  display: flex; flex-direction: column; gap: 8px;
   font-family: var(--serif);
   font-size: 16px;
-  line-height: 1.35;
+  line-height: 1.4;
+  color: var(--paper);
+}
+.rail-list span {
+  color: var(--paper);
+  font-style: normal;
+  font-weight: 400;
 }
 
 /* Pyramid / water-image highlights: line 1 widest, line 5 narrowest */
@@ -308,14 +314,17 @@
   list-style: none; margin: 0; padding: 0;
   display: flex; flex-direction: column; gap: 8px;
   font-family: var(--serif);
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--paper);
 }
-.aff-prev ul li { color: var(--ink-mute); }
+.aff-prev ul li { color: var(--paper); font-weight: 400; font-style: normal; }
 .aff-prev ul li b { font-weight: 500; color: var(--paper); }
 .aff-prev ul li i {
-  font-family: var(--serif-italic);
-  color: var(--ink-soft);
-  font-size: 12.5px;
+  font-family: var(--serif);
+  font-style: normal;
+  color: var(--paper);
+  font-size: 16px;
 }
 
 /* ---- HERO QUOTE STRIP ---- */

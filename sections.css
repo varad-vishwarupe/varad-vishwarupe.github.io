@@ -223,9 +223,9 @@
   font-weight: 500;
   white-space: nowrap;
 }
-.status-published { color: var(--paper); }            /* white */
-.status-accepted  { color: var(--accent); }           /* amber/yellow */
-.status-preprint  { color: var(--accent); opacity: 0.8; }
+.status-published { color: #138808; }                 /* India green */
+.status-accepted  { color: #FF9933; }                 /* India saffron */
+.status-preprint  { color: var(--paper); }            /* white */
 .pub-award { color: var(--accent); font-weight: 500; }
 .pub.is-hidden { display: none; }
 
@@ -608,7 +608,7 @@
   font-family: var(--serif); font-size: 15px; line-height: 1.55;
   color: rgba(245, 240, 228, 0.78); margin: 0;
 }
-.essay-abstract { font-size: 15.5px; color: rgba(245, 240, 228, 0.85); }
+.essay-abstract { font-size: 15.5px; color: rgba(245, 240, 228, 0.85); min-height: 21.5em; }
 .essay > p em, .essay-abstract em { font-family: var(--serif-italic); color: var(--accent); font-style: normal; }
 .essay > p b, .essay-abstract b { color: var(--paper); font-weight: 500; }
 .essay > p .serif-it, .essay-abstract .serif-it { font-family: var(--serif-italic); color: var(--accent); }
