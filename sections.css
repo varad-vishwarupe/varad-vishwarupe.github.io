@@ -372,11 +372,76 @@
 }
 .vif-monitor-cap .caps { color: var(--accent); font-family: var(--mono); }
 
+/* ---------- VIF FLAGSHIP BANNER (lives inside Code section, above repo grid) ---------- */
+.vif-banner {
+  border: 1px solid var(--accent);
+  background: linear-gradient(180deg, rgba(194,73,42,0.10), rgba(194,73,42,0.02));
+  margin-bottom: 0;
+  padding: 28px 28px 24px 28px;
+  position: relative;
+}
+.vif-banner-head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 18px;
+  font-family: var(--mono);
+  font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.vif-banner-head .repo-tag {
+  background: var(--accent); color: var(--ink); padding: 4px 10px; border-radius: 3px;
+  font-weight: 600;
+}
+.vif-banner-head .repo-status {
+  color: var(--accent); display: inline-flex; align-items: center; gap: 8px;
+}
+.vif-banner-head .dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--accent); animation: pulse 1.6s ease-in-out infinite;
+}
+.vif-banner-body {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 28px;
+  align-items: start;
+}
+.vif-banner-meta h3 {
+  font-family: var(--serif); font-size: 32px; font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--paper);
+  margin: 0 0 12px 0;
+}
+.vif-banner-desc {
+  font-family: var(--serif); font-size: 15px; line-height: 1.5;
+  color: rgba(245, 240, 228, 0.82);
+  margin: 0;
+}
+.vif-banner-meters {
+  display: flex; flex-direction: column; gap: 12px;
+}
+.vif-banner-cap {
+  grid-column: 1 / -1;
+  font-family: var(--serif-italic); font-size: 13px;
+  color: rgba(245, 240, 228, 0.55);
+  margin: 18px 0 0 0;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(245, 240, 228, 0.18);
+  line-height: 1.45;
+}
+.vif-banner-cap .caps {
+  font-family: var(--mono); color: var(--accent);
+  letter-spacing: 0.12em; font-style: normal;
+}
+.vif-banner-cap .serif-it { font-family: var(--serif-italic); }
+
+@media (max-width: 900px) {
+  .vif-banner-body { grid-template-columns: 1fr; }
+}
+
 /* ---------- CODE ---------- */
 .repo-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border: 1px solid var(--rule-strong);
+  border-top: 0;  /* connects to vif-banner above */
   margin-bottom: 56px;
 }
 .repo {
@@ -608,31 +673,40 @@
 .essay-pull .serif-it { font-family: var(--serif-italic); color: var(--accent); }
 .essay-body { font-family: var(--serif); font-size: 15.5px; line-height: 1.55; color: rgba(245, 240, 228, 0.78); }
 
+.quote-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 8px;
+}
+.quote-pair .essay-quote { margin-top: 0; border-right: 1px solid rgba(245, 240, 228, 0.18); }
+.quote-pair .essay-quote:last-child { border-right: 0; }
+
 .essay-quote {
   background: var(--ink);
   color: var(--paper);
   border-right: 0;
   border-top: 0;
-  padding: 14px 20px;
-  margin-top: 16px;
+  padding: 22px 26px;
+  margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 .essay-quote blockquote {
   margin: 0;
   font-family: var(--serif-italic);
   font-style: italic;
-  font-size: 15.5px;
+  font-size: 18px;
   line-height: 1.35;
   color: var(--paper);
   flex: 1;
   min-width: 240px;
 }
 .essay-quote cite {
-  font-family: var(--mono); font-size: 10px;
+  font-family: var(--mono); font-size: 10.5px;
   letter-spacing: 0.08em; font-style: normal;
   color: var(--accent);
   margin-top: 0;
@@ -804,10 +878,10 @@
 
 .footer-rule { height: 1px; background: var(--rule-strong); margin: 0 -32px; }
 .site-footer {
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr;
+  display: grid; grid-template-columns: 1fr 1.4fr 1fr;
   gap: 32px;
   padding: 28px 0 36px 0;
-  align-items: start;
+  align-items: center;
 }
 .ft-col { display: flex; flex-direction: column; gap: 4px; }
 .ft-col .caps { color: var(--accent); }
@@ -815,9 +889,9 @@
   font-family: var(--serif); font-size: 13px; color: var(--ink-mute);
   line-height: 1.4;
 }
-.ft-brand { display: flex; flex-direction: row; gap: 12px; align-items: center; }
-.ft-brand b { font-family: var(--serif); font-weight: 500; font-size: 16px; display: block; color: var(--paper); }
-.ft-meta { text-align: right; }
+.ft-left { text-align: left; align-items: flex-start; }
+.ft-center { text-align: center; align-items: center; }
+.ft-right { text-align: right; align-items: flex-end; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1000px) {
