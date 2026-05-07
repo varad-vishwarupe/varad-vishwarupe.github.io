@@ -834,8 +834,8 @@
   margin-bottom: 64px;
   text-align: center;
 }
-.contact-main { width: 100%; max-width: 800px; text-align: center; }
-.contact-main .section-num { margin-bottom: 16px; text-align: center; }
+.contact-main { width: 100%; max-width: 800px; text-align: center; margin: 0 auto; }
+.contact-main .section-num { margin-bottom: 16px; text-align: center; display: block; }
 .contact-title {
   font-family: var(--serif); font-weight: 400;
   font-size: clamp(22px, 2.6vw, 32px);
@@ -851,6 +851,11 @@
   gap: 0;
   border-top: 1px solid var(--rule-strong);
   width: 100%; max-width: 800px;
+  margin: 0 auto;
+}
+.contact-channels .ch {
+  text-align: center;
+  align-items: center;
 }
 .ch {
   padding: 18px 0;
